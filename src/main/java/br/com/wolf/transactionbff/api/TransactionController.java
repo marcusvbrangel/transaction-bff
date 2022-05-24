@@ -17,6 +17,7 @@ public class TransactionController {
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Mono<TransactionDto> buscarTransacao(@PathVariable("id") final String uuid) {
+        System.out.println("transaction: " + uuid);
         return Mono.empty();
     }
 
